@@ -1,13 +1,14 @@
 {
   "name": "archimedes-ds",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "oxlint",
     "lint:fix": "oxlint --fix",
+    "fmt": "oxfmt",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
@@ -33,6 +34,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^30.5.2",
     "jest-environment-jsdom": "^30.5.2",
+    "oxfmt": "^0.72.0",
     "oxlint": "^1.81.0",
     "storybook": "^10.6.1",
     "ts-jest": "^29.4.14",
