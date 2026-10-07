@@ -1,0 +1,24 @@
+.clickableCard {
+  all: unset;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.clickableCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.clickableCard:focus-visible {
+  /* `all: unset` removes the focus ring, so add one back */
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
