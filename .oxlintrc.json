@@ -20,7 +20,10 @@
     "typescript/consistent-type-imports": "warn",
     "import/no-duplicates": "warn",
     "import/no-cycle": "error",
-    "import/no-unassigned-import": ["warn", { "allow": ["**/*.css", "@testing-library/jest-dom"] }],
+    "import/no-unassigned-import": [
+      "warn",
+      { "allow": ["**/*.css", "@testing-library/jest-dom"] }
+    ],
     "eqeqeq": "error",
     "no-console": ["warn", { "allow": ["warn", "error"] }],
     "sort-imports": [

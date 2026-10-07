@@ -1,23 +1,23 @@
 module.exports = {
-  testEnvironment: "jsdom",
-  setupFilesAfterEnv: ["<rootDir>/jest.setup.ts"],
-  testMatch: ["**/*.test.{ts,tsx}"],
   moduleNameMapper: {
-    "\\.(css|scss|sass|less)$": "identity-obj-proxy",
+    '\\.(css|scss|sass|less)$': 'identity-obj-proxy',
   },
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+  testEnvironment: 'jsdom',
+  testMatch: ['**/*.test.{ts,tsx}'],
   transform: {
-    "^.+\\.tsx?$": [
-      "ts-jest",
+    '^.+\\.tsx?$': [
+      'ts-jest',
       {
         tsconfig: {
-          jsx: "react-jsx",
-          module: "commonjs",
-          target: "es2020",
           esModuleInterop: true,
+          jsx: 'react-jsx',
+          module: 'commonjs',
           strict: true,
-          types: ["jest", "node", "@testing-library/jest-dom", "vite/client"],
+          target: 'es2020',
+          types: ['jest', 'node', '@testing-library/jest-dom', 'vite/client'],
         },
       },
     ],
   },
-};
+}

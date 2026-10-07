@@ -1,1 +1,1 @@
-export { Typewriter } from './typewriter.tsx';
+export { Typewriter } from './typewriter.tsx'
